@@ -1,8 +1,6 @@
-
-
 function changeHeading() {
-const button = document.getElementById('button');
-const heading = document.getElementById('heading');
+    const button = document.getElementById('button');
+    let heading = document.getElementById('heading');
     if (heading.innerText == "BEFORE CLICK") {
         heading.innerText = "AFTER CLICK"
         heading.classList.remove("before-click")
@@ -12,9 +10,9 @@ const heading = document.getElementById('heading');
         heading.classList.remove("after-click")
         heading.classList.add("before-click")
     };
-    
+
 };
 
 module.exports = {
-       changeHeading,
+    changeHeading,
 };
