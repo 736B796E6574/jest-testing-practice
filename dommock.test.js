@@ -1,9 +1,8 @@
 /**
  * @jest-environment jsdom
  */
-const {
-    changeHeading,
-} = require('./dommock');
+ let heading;
+ let changeHeading;
 
 beforeAll(() => {
 
@@ -12,7 +11,8 @@ beforeAll(() => {
     document.open();
     document.write(fileContents);
     document.close();
-    heading = require("./dommock").heading
+    heading = require("./dommock").heading;
+    changeHeading = require("./dommock").changeHeading;
 });
 
 
@@ -22,6 +22,6 @@ describe("testing the DOM elements", () => {
         expect(document.getElementsByTagName("h1").length).toBe(2)
     });
     test("check that the inner text of H1 is 'BEFORE CLICK'", () => {
-        expect(heading.innerText).toBe("BEFORE CLICK")
+        expect(heading.textContent).toBe("BEFORE CLICK")
     });
 });
