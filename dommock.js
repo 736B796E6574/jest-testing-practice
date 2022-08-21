@@ -1,9 +1,7 @@
 const button = document.getElementById('button');
 const heading = document.getElementById('heading');
 
-const listener = button.addEventListener("click", changeHeading);
-
-function changeHeading(){
+function changeHeading() {
     if (heading.innerText == "BEFORE CLICK") {
         heading.innerText = "AFTER CLICK"
         heading.classList.remove("before-click")
@@ -16,8 +14,8 @@ function changeHeading(){
 };
 
 module.exports = {
-    changeHeading,
+
     button,
     heading,
-    listener
+    changeHeading
 }
