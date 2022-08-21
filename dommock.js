@@ -14,8 +14,7 @@ function changeHeading() {
 };
 
 module.exports = {
-
     button,
     heading,
-    changeHeading
-}
+    changeHeading,
+};
