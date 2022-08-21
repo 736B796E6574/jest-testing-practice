@@ -20,6 +20,6 @@ const {
 describe("testing the DOM elements", () => {
     test("testing that h1 text is toggled", () => {
         changeHeading();
-        expect(document.getElementsByTagName("h1")).length.toBe(2)
+        expect(document.getElementsByTagName("h1")).length.toBe(1)
     });
 });
